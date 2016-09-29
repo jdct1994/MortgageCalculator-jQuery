@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Mortgage Calculator jQuery</title>
+
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+    
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+  </head>
+
+  <body>
+
+<div id="entireForm">
+  <form class="form-horizontal">
+    <fieldset>
+    <div class="col-sm-offset-2">
+    <legend id="header1">jQuery Mortgage Calculator</legend>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Loan Balance</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputLoanBalance" placeholder="Enter Loan Balance">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Interest Rate (%)</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputInterestRate" placeholder="Enter Interest Rate">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Loan Term (years)</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputLoanTerm" placeholder="Enter Loan Term">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Period</label>
+        <div class="col-sm-10">
+          <select class="form-control" id="selectMenu">
+
+          </select>
+        </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button id="calculate" type="button" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+            <pre class="col-sm-offset-2" id="output">
+            </pre>
+  </fieldset>
+  </form>
+</div>
+
+      <script src="/bower_components/jquery/dist/jquery.js"></script>
+      <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+      <script src="index.js"></script>
+
+</body>
+
+</html>
